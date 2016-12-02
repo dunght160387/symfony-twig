@@ -1,0 +1,23 @@
+{
+  "name": "symfony-twig",
+  "authors": [
+    "dunght160387 <dunght1603@gmail.com>"
+  ],
+  "description": "symfony-twig",
+  "main": "",
+  "keywords": [
+    "symfony-twig"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
