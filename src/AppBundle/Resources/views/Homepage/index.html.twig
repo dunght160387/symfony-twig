@@ -2,12 +2,88 @@
 
 {# header #}
 {% block title %}
+    {{ parent() }}
     My homepage
+{% endblock %}
+
+{#block style#}
+{% block stylesheets %}
+    {{ parent() }}
+
+    {#fix for navbar-fixed-top#}
+    <style type="text/css">
+        body{
+            min-height: 1000px;
+            padding-top: 50px;
+        }
+        .main{
+            margin: 5px;
+        }
+    </style>
 {% endblock %}
 
 {# body #}
 {% block body %}
-    <h2>This is my homepage</h2>
+    <div id="main">
+        <div id="navbar">
+            <nav class="navbar navbar-inverse navbar-static-top navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a href="" class="navbar-brand">Dzunght163</a>
+                    </div>
+
+                    <div class="navbar-collapse collapse" id="menu">
+                        <ul class="nav navbar-nav">
+                            <li><a href="">Trang chủ</a></li>
+                            <li><a href="">Giới thiệu</a></li>
+                            <li><a href="">Tin tức</a></li>
+                            <li><a href="">Thương hiệu</a></li>
+                            <li><a href="">Liên hệ</a></li>
+                        </ul>
+
+                        <div class="navbar-right">
+                            <a href="" class="btn btn-info navbar-btn">Đăng ký</a>
+                            <a href="" class="btn btn-warning navbar-btn">Đăng nhập</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>Lorem Ipsum chỉ đơn giản là một đoạn văn bản giả, được dùng vào việc trình bày và dàn trang phục vụ
+                        cho in ấn. Lorem Ipsum đã được sử dụng như một văn bản chuẩn cho ngành công nghiệp in ấn từ những
+                        năm 1500, khi một họa sĩ vô danh ghép nhiều đoạn văn bản với nhau để tạo thành một bản mẫu văn bản.
+                        Đoạn văn bản này không những đã tồn tại năm thế kỉ, mà khi được áp dụng vào tin học văn phòng, nội
+                        dung của nó vẫn không hề bị thay đổi. Nó đã được phổ biến trong những năm 1960 nhờ việc bán những
+                        bản giấy Letraset in những đoạn Lorem Ipsum, và gần đây hơn, được sử dụng trong các ứng dụng dàn
+                        trang, như Aldus PageMaker.</p>
+                    <p>Lorem Ipsum chỉ đơn giản là một đoạn văn bản giả, được dùng vào việc trình bày và dàn trang phục vụ
+                        cho in ấn. Lorem Ipsum đã được sử dụng như một văn bản chuẩn cho ngành công nghiệp in ấn từ những
+                        năm 1500, khi một họa sĩ vô danh ghép nhiều đoạn văn bản với nhau để tạo thành một bản mẫu văn bản.
+                        Đoạn văn bản này không những đã tồn tại năm thế kỉ, mà khi được áp dụng vào tin học văn phòng, nội
+                        dung của nó vẫn không hề bị thay đổi. Nó đã được phổ biến trong những năm 1960 nhờ việc bán những
+                        bản giấy Letraset in những đoạn Lorem Ipsum, và gần đây hơn, được sử dụng trong các ứng dụng dàn
+                        trang, như Aldus PageMaker.</p>
+                    <p>Lorem Ipsum chỉ đơn giản là một đoạn văn bản giả, được dùng vào việc trình bày và dàn trang phục vụ
+                        cho in ấn. Lorem Ipsum đã được sử dụng như một văn bản chuẩn cho ngành công nghiệp in ấn từ những
+                        năm 1500, khi một họa sĩ vô danh ghép nhiều đoạn văn bản với nhau để tạo thành một bản mẫu văn bản.
+                        Đoạn văn bản này không những đã tồn tại năm thế kỉ, mà khi được áp dụng vào tin học văn phòng, nội
+                        dung của nó vẫn không hề bị thay đổi. Nó đã được phổ biến trong những năm 1960 nhờ việc bán những
+                        bản giấy Letraset in những đoạn Lorem Ipsum, và gần đây hơn, được sử dụng trong các ứng dụng dàn
+                        trang, như Aldus PageMaker.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock %}
 
 {# footer #}
