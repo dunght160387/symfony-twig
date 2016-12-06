@@ -1,5 +1,6 @@
 {% extends '@Admin/base.html.twig' %}
 
-{#{% block body %}#}
-    {#This is Admin page.#}
-{#{% endblock %}#}
+{#body page-content#}
+{% block body_page_content %}
+    {{ parent() }}
+{% endblock %} {#block title#}
