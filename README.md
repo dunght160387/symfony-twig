@@ -1,69 +1,51 @@
-Symfony Standard Edition
-========================
+Symfony twig
+============
 
-Welcome to the Symfony Standard Edition - a fully-functional Symfony
-application that you can use as the skeleton for your new applications.
-
-For details on how to download and get started with Symfony, see the
-[Installation][1] chapter of the Symfony Documentation.
+Simple Project to build web application with Symfony, using Twig engine for html template.
 
 What's inside?
 --------------
 
-The Symfony Standard Edition is configured with the following defaults:
+Current using these resources:
 
-  * An AppBundle you can use to start coding;
+  * Bootstrap 3
 
-  * Twig as the only configured template engine;
+  * Sb-admin-2 opensource for dashboard
+
+  * Twig as template engine;
 
   * Doctrine ORM/DBAL;
 
   * Swiftmailer;
 
-  * Annotations enabled for everything.
+Get started
+-----------
 
-It comes pre-configured with the following bundles:
+Install all dependencies
 
-  * **FrameworkBundle** - The core Symfony framework bundle
+```
+composer install
 
-  * [**SensioFrameworkExtraBundle**][6] - Adds several enhancements, including
-    template and routing annotation capability
+bower install
+```
 
-  * [**DoctrineBundle**][7] - Adds support for the Doctrine ORM
+Download sb-amin-2 from [https://github.com/BlackrockDigital/startbootstrap-sb-admin-2/archive/gh-pages.zip](https://github.com/BlackrockDigital/startbootstrap-sb-admin-2/archive/gh-pages.zip).
+Put to lib/ then extract.
 
-  * [**TwigBundle**][8] - Adds support for the Twig templating engine
+Run shell to update links to dependencies
 
-  * [**SecurityBundle**][9] - Adds security by integrating Symfony's security
-    component
+```
+cd web/assets
+./start.sh
+```
 
-  * [**SwiftmailerBundle**][10] - Adds support for Swiftmailer, a library for
-    sending emails
+Run server test
 
-  * [**MonologBundle**][11] - Adds support for Monolog, a logging library
+```
+php app/console server:run localhost:8888
+```
 
-  * **WebProfilerBundle** (in dev/test env) - Adds profiling functionality and
-    the web debug toolbar
-
-  * **SensioDistributionBundle** (in dev/test env) - Adds functionality for
-    configuring and working with Symfony distributions
-
-  * [**SensioGeneratorBundle**][13] (in dev/test env) - Adds code generation
-    capabilities
-
-  * **DebugBundle** (in dev/test env) - Adds Debug and VarDumper component
-    integration
-
-All libraries and bundles included in the Symfony Standard Edition are
-released under the MIT or BSD license.
+Point browser to localhost:8888 for homepage, or localhost:8888/admin for admin dashboard.
 
 Enjoy!
-
-[1]:  https://symfony.com/doc/2.8/setup.html
-[6]:  https://symfony.com/doc/current/bundles/SensioFrameworkExtraBundle/index.html
-[7]:  https://symfony.com/doc/2.8/doctrine.html
-[8]:  https://symfony.com/doc/2.8/templating.html
-[9]:  https://symfony.com/doc/2.8/security.html
-[10]: https://symfony.com/doc/2.8/email.html
-[11]: https://symfony.com/doc/2.8/logging.html
-[12]: https://symfony.com/doc/2.8/assetic/asset_management.html
-[13]: https://symfony.com/doc/current/bundles/SensioGeneratorBundle/index.html
+------
