@@ -1,4 +1,8 @@
 /web/bundles/
+/web/assets/bootstrap/
+/web/assets/creative/
+/web/assets/jquery/
+/web/assets/sb-admin-2/
 /app/bootstrap.php.cache
 /app/cache/*
 /app/config/parameters.yml
