@@ -24,10 +24,23 @@
     {#body navbar#}
     {% block body_navbar %}
         {{ include('@Admin/body-navbar.html.twig', {}) }}
-    {% endblock %} {#block title#}
+    {% endblock %} {#block navbar#}
 
     {#body page-content#}
     {% block body_page_content %}
         {{ include('@Admin/body-page-content.html.twig', {'defaultPageContent': 'This is page content'}) }}
-    {% endblock %} {#block title#}
+    {% endblock %} {#block body_page_content#}
+
+    {#body javascripts#}
+    {% block body_javascripts %}
+        <!-- Bootstrap -->
+        {{ parent() }}
+
+        <!-- Metis Menu Plugin JavaScript -->
+        <script src="{{ asset("assets/sb-admin-2/vendor/metisMenu/metisMenu.js") }}"></script>
+
+        <!-- Custom Theme JavaScript -->
+        <script src="{{ asset("assets/sb-admin-2/dist/js/sb-admin-2.js") }}"></script>
+    {% endblock %} {#block body_javascripts#}
+
 {% endblock %} {#end block body#}
